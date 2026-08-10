@@ -80,7 +80,7 @@ jobs:
         path: ./lorie/build/intermediates/cxx/Debug/*
 
     - name: Update Nightly Release
-      uses: andelf/nightly-release@main
+      uses: robertkirkman/nightly-release@main
       if: github.repository == 'robertkirkman/termux-x11' && github.ref == 'refs/heads/master'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
